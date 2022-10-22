@@ -3,12 +3,12 @@ const router = require('express').Router();
 
 //TO-DO: Connect server with HTML
     //Connect Index
-router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/index.html'));
+router.get('/login', (req, res) => {
+   res.render('login')
 });
     //Connect to recipes
 router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/index.html')); //recipes.html?
+   res.render('homepage')
 });
     //redirect undefined to Index
 router.get('*', (req, res) => {
