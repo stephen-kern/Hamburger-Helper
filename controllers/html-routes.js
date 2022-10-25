@@ -11,9 +11,9 @@ router.get('/', (req, res) => {
    res.render('homepage')
 });
     //redirect undefined to Index
-router.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/index.html'));
-});
+// router.get('*', (req, res) => {
+//     res.sendFile(path.join(__dirname, './public/index.html'));
+// });
 
 //Export router function
 module.exports = router;
